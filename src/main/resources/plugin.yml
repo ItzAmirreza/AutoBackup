@@ -1,0 +1,11 @@
+name: AutoBackup
+version: '${project.version}'
+main: me.deadlight.autobackup.AutoBackup
+api-version: 1.13
+authors: [ Dead_Light ]
+description: A plugin that automatically backups worlds and plugin data
+commands:
+  autobackup:
+    description: Autobackup commands
+    aliases:
+      - ab

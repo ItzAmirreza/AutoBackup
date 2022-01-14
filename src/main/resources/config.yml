@@ -1,0 +1,24 @@
+#backup interval in seconds
+backup-interval: 180
+
+#wether if the backup will be uploaded as folder or zip (false means zip)
+#we recommend not touching this setting unless you know what you are doing
+upload-as-folder: false
+
+# SFTP server detail
+SFTP:
+  # SFTP server hostname/ip
+  hostname: sftp.example.com
+  # SFTP server port
+  port: 22
+  # SFTP server username
+  username: username
+  # SFTP server password
+  password: password
+  # SFTP server path for uploading backups
+  # "/" is for linux family, "\" is for windows family directory separator
+  remoteBackupPath: /opt/AutoBackup/
+  # if it's on linux family, "/" is used, if it's on windows family, "\" is used
+  target-machine-seperator: "/"
+  #SFTP serverAlive interval in ms
+  aliveInterval: 5000
